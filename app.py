@@ -17,7 +17,7 @@ st.markdown('<h1 class="logo">THESIS-X</h1>', unsafe_allow_html=True)
 st.markdown('<p class="tagline">Ask any topic and get a critique-ready hypothesis assessment.</p>', unsafe_allow_html=True)
 
 # ==== Gemini API Key ====
-api_key = st.secrets.get("GEMINI_API_KEY") or st.text_input("🔐 Enter Gemini API Key", type="password", label_visibility="collapsed")
+api_key = st.secrets.get("GEMINI_API_KEY") or st.text_input("Enter Gemini API Key", type="password", label_visibility="collapsed")
 if api_key:
     genai.configure(api_key=api_key)
 
