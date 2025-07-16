@@ -1,5 +1,7 @@
 import streamlit as st
 import google.generativeai as genai
+st.set_page_config(page_title="THESIS-X | Hypothesis Falsifier", layout="centered")
+
 # ==== CSS ====
 def load_css(file_path):
     with open(file_path, "r") as f:
@@ -10,7 +12,6 @@ load_css("style.css")
 
 
 
-st.set_page_config(page_title="THESIS-X | Hypothesis Falsifier", layout="centered")
 
 # ==== Header ====
 st.markdown('<h1 class="logo">THESIS-X</h1>', unsafe_allow_html=True)
